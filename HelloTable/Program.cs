@@ -1,4 +1,7 @@
-﻿using System.Text;
+﻿// Run qilish uchun Newtonsoft.Json nuget packagedan yuklanishi kerak
+//Qolgan barcha hususiyatlari codning oxirida keltirilgan
+
+using System.Text;
 using Newtonsoft.Json.Linq;
 
 
@@ -742,6 +745,8 @@ namespace HelloTable
                 }
             }
 
+
+    //Sz qidirayotgan javha shuyerda vvvv
             public async void Generator()
             {
                 StringBuilder result = new StringBuilder();
@@ -917,3 +922,15 @@ namespace HelloTable
         }
     }
 }
+
+/* User Interfacega ikki hafta vohtim ketti🥵
+ * 
+ * Performancega ham kuchli e'tibor qaratdim:
+ *      - har bir o'zgarishi mumkin bo'lgan satr tipini StringBuilder qilganman!
+ *      - if larni o'rniga Switch Case ishlatilgan ko'p hollarda!
+ *
+ * Hammaga qiziq bo'lgan generatsiya qiladigan qismi 750-qatorda joylashgan!)
+ *
+ * Hamma kod bitta faylda bogani uchun hayron bogandursiz😁
+ * chunki bu dasturni Clean Architecture boshlashimizdan oldin boshlagan edim)
+ */
